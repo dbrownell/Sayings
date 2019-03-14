@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "imageUrl" : "assets/categories_data/comedy.png",
+    "title" : "comedy",
+    "featured" : true
+  },
+  {
+    "id": 2,
+    "imageUrl" : "assets/categories_data/morbit.png",
+    "title" : "morbit",
+    "featured" : true
+  },
+  {
+    "id": 3,
+    "imageUrl" : "assets/categories_data/religion.png",
+    "title" : "religion",
+    "featured" : true
+  },
+  {
+    "id": 4,
+    "imageUrl" : "assets/categories_data/pragmatic.png",
+    "title" : "pragmatic",
+    "featured" : true
+  },
+  {
+    "id": 5,
+    "imageUrl" : "assets/categories_data/motivational.png",
+    "title" : "motivational",
+    "featured" : true
+  },
+  {
+    "id": 6,
+    "imageUrl" : "assets/categories_data/financial.png",
+    "title" : "financial",
+    "featured" : true
+  },
+  {
+    "id": 7,
+    "imageUrl" : "assets/categories_data/cultural.png",
+    "title" : "cultural",
+    "featured" : true
+     },
+  {
+    "id": 8,
+    "imageUrl" : "assets/categories_data/romatic.png",
+    "title" : "romatic",
+    "featured" : true
+  }
+]

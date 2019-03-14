@@ -1,0 +1,161 @@
+[
+  {
+    "id": 1,
+    "saying" : "Before dog ear cut, fly was eating",
+    "imageUrl" : "assets/image_data/dog_ear.png",
+    "title" : "Dog Ear",
+    "categories": [
+      "comedy", "cultural"
+    ]
+  },
+  {
+    "id": 2,
+    "saying" : "Dead men tell no tales",
+    "featured" : true,
+    "imageUrl" : "assets/image_data/dead_man.png",
+    "title" : "Dead Men",
+    "categories": [
+      "Morbit"
+    ]
+  },
+  {
+    "id": 3,
+    "saying" : "If a man dies, will he live again?",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/resurrection.png",
+    "title" : "Resurrection",
+    "categories": [
+      "religion"
+    ]
+  },
+  {
+    "id": 4,
+    "saying" : "The sun will rise tomorrow",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/sun.png",
+    "title" : "Sun Rise",
+    "categories": [
+      "pragmatic"
+    ]
+  },
+  {
+    "id": 5,
+    "saying" : "When water dry, fish eat fish",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/fish.png",
+    "title" : "Fish Eat Fish",
+    "categories": [
+      "motivational", "cultural"
+    ]
+  },
+  {
+    "id": 6,
+    "saying" : "Penny wise and pound foolish",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/pennywise.png",
+    "title" : "Pennywise",
+    "categories": [
+      "financial"
+    ]
+  },
+  {
+    "id": 7,
+    "saying" : "Become the hardest working person you know",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/hard_work.png",
+    "title" : "Hard Work",
+    "categories": [
+      "motivational"
+    ]
+  },
+  {
+    "id": 8,
+    "saying" : "Love is a feeling you feel, when you feel a feeling you have never felt before",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/love.png",
+    "title" : "Love",
+    "categories": [
+      "romatic"
+    ]
+  },
+  {
+    "id": 9,
+    "saying" : "Love means never having to say I am sorry",
+    "featured" : true,
+    "imageUrl" : "assets/image_image_data/love_sorrow.png",
+    "title" : "Love and Sorrow",
+    "categories": [
+      "romatic"
+    ]
+  },
+  {
+    "id": 10,
+    "description" : "To be a man is not an easy thing",
+    "imageUrl" : "assets/image_image_data/man.png",
+    "featured" : true,
+    "title" : "Easy Man",
+    "categories": [
+      "pragmatic"
+    ]
+  },
+  {
+    "id": 11,
+    "description" : "Man live by man, toe nail fungus live by toe nail",
+    "imageUrl" : "assets/image_image_data/toe_nail_fungus.png",
+    "featured" : true,
+    "title" : "Toe Nail Fungus",
+    "categories": [
+      "pragmatic"
+    ]
+  },
+  {
+    "id": 12,
+    "description" : "Live each day as if it is your last day",
+    "imageUrl" : "assets/image_data/day_by_day.png",
+    "featured" : true,
+    "title" : "Day By Day",
+    "categories": [
+      "pragmatic"
+    ]
+  },
+  {
+    "id": 13,
+    "description" : "A bird in the hand is better than two in the forest",
+    "imageUrl" : "assets/image_data/bird_in_hand.png",
+    "featured" : true,
+    "title" : "Bird in Hand",
+    "categories": [
+      "pragmatic"
+    ]
+  },
+  {
+    "id": 14,
+    "description" : "To talk the talk, you need to walk the walk",
+    "imageUrl" : "assets/image_data/walk_and_talk.png",
+    "featured" : true,
+    "title" : "Wlaking and Talking",
+    "categories": [
+      "motivational"
+    ]
+  },
+  {
+    "id": 15,
+    "description" : "One man trash is another man's treasure",
+    "imageUrl" : "assets/image_data/trash_and_treasure.png",
+    "featured" : true,
+    "title" : "Trash and Treasure",
+    "categories": [
+      "financial"
+    ]
+  },
+  {
+    "id": 16,
+    "description" : "The head got burnt and you are asking about the beard",
+    "imageUrl" : "assets/image_data/burning_head.png",
+    "featured" : true,
+    "title" : "Burning Head",
+    "categories": [
+      "cultural"
+    ]
+  }
+]
