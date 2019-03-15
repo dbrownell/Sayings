@@ -1,0 +1,14 @@
+<!-- <nav class="tabs"
+     mat-tab-nav-bar>
+  <a mat-tab-link
+     *ngFor="let category of categoriesNames$ | async"
+     #rla="routerLinkActive" routerLinkActive
+     [routerLink]="['/categories', category]">
+    {{ category | uppercase }}
+  </a>
+</nav> -->
+
+<div class="grid-list-container">
+  <app-sayings-grid [categories]="categories$ | async"></app-sayings-grid>
+</div>
+<!-- [active]="rla.isActive" -->

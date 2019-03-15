@@ -1,0 +1,17 @@
+<mat-grid-list [cols]="columns$ | async" gutterSize="16">
+    <mat-grid-tile class="tile" *ngFor="let category of categories"
+    matTooltip = "Sample Tooltip"
+   aria-label = "Sample Tooltip">
+      <a class="tile__content"
+         fxLayout="column"
+         fxLayoutAlign="center center"
+         [routerLink]="['/category', category.id]">
+        <div class="tile__thumbnail"
+             [ngStyle]="{'background-image': 'url(' + category.imageUrl + ')'}"
+             ></div>
+        <div class="tile__title"
+             ngClass.xs="tile__title--xs"
+             ngClass.lg="tile__title--lg">{{ category.title | uppercase }}</div>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
