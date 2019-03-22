@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SayingsService } from './shared/services/sayings.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CategoryRouteResolver } from './home/categories/category-route-resolver';
+import { LayoutModule } from '@angular/cdk/layout';
+import { SayingsNavRouteResolverService } from './sayings-nav/sayings-nav-route-resolver.service';
 @NgModule({
   declarations: [
     AppComponent
@@ -17,8 +19,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     SayingsMaterialModule,
     HttpClientModule,
+    LayoutModule
   ],
-  providers: [SayingsService],
+  providers: [
+    SayingsService,
+    CategoryRouteResolver,
+    SayingsNavRouteResolverService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

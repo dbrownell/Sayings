@@ -2,6 +2,7 @@
   {
     "id": 1,
     "saying" : "Before dog ear cut, fly was eating",
+    "featured" : true,
     "imageUrl" : "assets/image_data/dog_ear.png",
     "title" : "Dog Ear",
     "categories": [
@@ -90,7 +91,7 @@
   },
   {
     "id": 10,
-    "description" : "To be a man is not an easy thing",
+    "saying" : "To be a man is not an easy thing",
     "imageUrl" : "assets/image_image_data/man.png",
     "featured" : true,
     "title" : "Easy Man",
@@ -100,7 +101,7 @@
   },
   {
     "id": 11,
-    "description" : "Man live by man, toe nail fungus live by toe nail",
+    "saying" : "Man live by man, toe nail fungus live by toe nail",
     "imageUrl" : "assets/image_image_data/toe_nail_fungus.png",
     "featured" : true,
     "title" : "Toe Nail Fungus",
@@ -110,7 +111,7 @@
   },
   {
     "id": 12,
-    "description" : "Live each day as if it is your last day",
+    "saying" : "Live each day as if it is your last day",
     "imageUrl" : "assets/image_data/day_by_day.png",
     "featured" : true,
     "title" : "Day By Day",
@@ -120,7 +121,7 @@
   },
   {
     "id": 13,
-    "description" : "A bird in the hand is better than two in the forest",
+    "saying" : "A bird in the hand is better than two in the forest",
     "imageUrl" : "assets/image_data/bird_in_hand.png",
     "featured" : true,
     "title" : "Bird in Hand",
@@ -130,7 +131,7 @@
   },
   {
     "id": 14,
-    "description" : "To talk the talk, you need to walk the walk",
+    "saying" : "To talk the talk, you need to walk the walk",
     "imageUrl" : "assets/image_data/walk_and_talk.png",
     "featured" : true,
     "title" : "Wlaking and Talking",
@@ -140,7 +141,7 @@
   },
   {
     "id": 15,
-    "description" : "One man trash is another man's treasure",
+    "saying" : "One man trash is another man's treasure",
     "imageUrl" : "assets/image_data/trash_and_treasure.png",
     "featured" : true,
     "title" : "Trash and Treasure",
@@ -150,12 +151,22 @@
   },
   {
     "id": 16,
-    "description" : "The head got burnt and you are asking about the beard",
+    "saying" : "The head got burnt and you are asking about the beard",
     "imageUrl" : "assets/image_data/burning_head.png",
     "featured" : true,
     "title" : "Burning Head",
     "categories": [
       "cultural"
+    ]
+  },
+  {
+    "id": 16,
+    "saying" : "Dead men tell no tales",
+    "imageUrl" : "assets/image_data/burning_head.png",
+    "featured" : true,
+    "title" : "Dead Men",
+    "categories": [
+      "morbid"
     ]
   }
 ]

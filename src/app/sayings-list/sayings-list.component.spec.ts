@@ -1,21 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SayingsGridComponent } from './sayings-grid.component';
+import { SayingsListComponent } from './sayings-list.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-describe('SayingsGridComponent', () => {
-  let component: SayingsGridComponent;
-  let fixture: ComponentFixture<SayingsGridComponent>;
+describe('SayingsListComponent', () => {
+  let component: SayingsListComponent;
+  let fixture: ComponentFixture<SayingsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SayingsGridComponent, NO_ERRORS_SCHEMA ]
+      declarations: [ SayingsListComponent, NO_ERRORS_SCHEMA ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SayingsGridComponent);
+    fixture = TestBed.createComponent(SayingsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

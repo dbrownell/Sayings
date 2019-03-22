@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { SayingsService } from '../../shared/services/sayings.service';
 import { Icategories } from '../../shared/icategories';
-
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
@@ -12,7 +11,7 @@ import { Icategories } from '../../shared/icategories';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CategoriesComponent {
-  readonly categoriesNames$: Observable<string[]>;
+
   readonly categories$: Observable<Icategories[]>;
 
   constructor(private sayingsService: SayingsService, private route: ActivatedRoute) {
@@ -22,6 +21,6 @@ export class CategoriesComponent {
   }
 
   private getCategory(category: string): Observable<Icategories[]> {
-    return category.toLowerCase() === 'all' ? this.sayingsService.getAll() : null;
+    return category.toLowerCase() === 'all' ? this.sayingsService.getAllCategories() : null;
   }
 }

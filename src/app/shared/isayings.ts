@@ -4,5 +4,5 @@ export interface Isayings {
   featured: boolean;
   imageUrl: string;
   title: string;
-  categories: [];
+  categories: string[];
 }

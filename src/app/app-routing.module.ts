@@ -7,8 +7,12 @@ export const routes: Routes = [
     loadChildren: './home/home.module#HomeModule'
   },
   {
-    path: 'category/:categoryId',
+    path: 'category/:category',
     loadChildren: './home/category/category.module#CategoryModule'
+  },
+  {
+    path: 'sayings-nav/:category',
+    loadChildren: './sayings-nav/sayings-nav.module#SayingsNavModule'
   }
 ];
 @NgModule({

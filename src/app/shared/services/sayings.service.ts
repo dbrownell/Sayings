@@ -1,25 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { Icategories } from '../../shared/icategories';
-import { Resolve } from '@angular/router';
-
+import { Isayings } from '../isayings';
 @Injectable({
   providedIn: 'root'
 })
-export class SayingsService implements Resolve<any>{
+export class SayingsService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-  resolve() {
-    return this.getAll();
-  }
-  getAll(): Observable<Icategories[]> {
+  getAllCategories(): Observable<Icategories[]> {
     return this.http.get<Icategories[]>('/assets/categories_data/categories-data.json');
   }
-  getById(categoryId: number): Observable<Icategories> {
-    return this.http
-      .get<Icategories[]>('/assets/categories_data/categories-data.json')
-      .pipe(map(categories => categories.find(c => c.id === categoryId) as Icategories));
+
+  getSayingsByCategory(sayingTitle: string): Observable<Isayings[]> {
+    return this.http.get<Isayings[]>('/assets/sayings_data/sayings-data.json').pipe(
+      map(sayings => sayings.filter(p => p.categories.includes(sayingTitle))));
   }
 }
