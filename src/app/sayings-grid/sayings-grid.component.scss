@@ -17,23 +17,10 @@
   display: block;
   height: 100%;
   width: 100%;
-  padding: 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
-}
-
-.tile__price-tag {
-  color: mat-color($app-foreground, text);
-  font-size: 16px;
-  font-weight: 700;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
-.tile__price-tag--xs {
-  font-size: 14px;
+  padding-top: 20%;
 }
 
 .tile__thumbnail {
@@ -41,6 +28,8 @@
   background-size: contain;
   height: 50%;
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tile__title {

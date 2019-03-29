@@ -11,26 +11,23 @@ import { Icategories } from '../shared/icategories';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SayingsGridComponent {
-
   @Input() categories: Icategories[];
   readonly columns$: Observable<number>;
   readonly breakpointsToColumnsNumber = new Map([
-    [ 'xs', 1 ],
-    [ 'sm', 2 ],
-    [ 'md', 3 ],
-    [ 'lg', 4 ],
-    [ 'xl', 5 ],
+    ['xs', 1],
+    ['sm', 2],
+    ['md', 3],
+    ['lg', 4],
+    ['xl', 5]
   ]);
 
   constructor(private media: MediaObserver) {
     // If the initial screen size is xs ObservableMedia doesn't emit an event
     // and grid-list rendering fails. Once the following issue is closed, this
     // comment can be removed: https://github.com/angular/flex-layout/issues/388
-    this.columns$ = this.media.media$
-      .pipe(
-        map(mc => this.breakpointsToColumnsNumber.get(mc.mqAlias) as number),
-        startWith(3)
-      );
+    this.columns$ = this.media.media$.pipe(
+      map(mc => this.breakpointsToColumnsNumber.get(mc.mqAlias) as number),
+      startWith(3)
+    );
   }
-
 }

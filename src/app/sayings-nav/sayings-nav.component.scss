@@ -1,5 +1,5 @@
 .sidenav-container {
-  height: 100%;
+  height: 22%;
 }
 
 .sidenav {
@@ -10,15 +10,30 @@
   background: inherit;
 }
 
+@media only screen and (min-width: 464px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .topnav {
+    display: none;
+  }
+}
+
+.mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
 }
-.spacer{
+
+.spacer {
   flex: 1 1 auto;
-}
-.toolbar-menu-text{
-  color: white;
-  padding: 0.5%;
 }

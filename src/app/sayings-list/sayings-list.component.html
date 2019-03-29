@@ -1,8 +1,16 @@
-<mat-list>
-  <mat-list-item *ngFor="let saying of sayings">
-    <h3 matLine> {{saying.title}} </h3>
-    <p matLine>
-      <span> {{saying.saying}} </span>
-    </p>
-  </mat-list-item>
-</mat-list>
+<app-sayings-nav></app-sayings-nav>
+<div class="button-paddings">
+  <button (click)="getSelectedRows()">Get Selected Rows</button>
+</div>
+<ag-grid-angular
+    #agGrid
+    style="ag-grid-style"
+    class="ag-theme-balham ag-grid-style"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    rowSelection="multiple"
+    (gridReady)="onGridReady($event)"
+
+    >
+</ag-grid-angular>

@@ -1,0 +1,20 @@
+<app-sayings-nav></app-sayings-nav>
+<form [formGroup]="suggestionsForm" class="form-layout form-paddings">
+    <mat-form-field class="full-width row-paddings">
+      <input matInput formControlName="name" placeholder="Your Full Name"/>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <textarea matInput formControlName="suggestion" placeholder="Enter Saying"></textarea>
+    </mat-form-field>
+    <div class="actions">
+      <button mat-raised-button [disabled]="!suggestionsForm.valid" type="submit" [disabled]="!flagForm.valid" color="primary" class="btn btn-accent m-btn m-btn--air m-btn--custom">
+          <mat-icon>add_box</mat-icon>
+          Submit
+      </button>
+      &nbsp;
+      <button *ngIf="suggestionsForm.valid" mat-raised-button type="reset" class="btn btn-success" id="reset-btn" ng-click="reSet()" class="btn btn-accent m-btn m-btn--air m-btn--custom">
+        <mat-icon>clear</mat-icon>
+        Reset?
+      </button>
+    </div>
+</form>

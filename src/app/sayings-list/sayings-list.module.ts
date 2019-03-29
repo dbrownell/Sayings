@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SayingsMaterialModule } from '../sayings-material/sayings-material.module';
+import { AgGridModule } from 'ag-grid-angular/dist/aggrid.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    SayingsMaterialModule
+    AgGridModule.withComponents([])
   ]
 })
-export class SayingsNavModule { }
+export class SayingsListModule { }

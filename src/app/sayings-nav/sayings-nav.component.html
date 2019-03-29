@@ -1,13 +1,15 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer
-  class="sidenav"
-  fixedInViewport="true"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="false"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)"
+  >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Suggest a Saying</a>
+      <a mat-list-item [routerLink]="['/suggested-saying']" routerLinkActive="router-link-active">Suggest a Saying</a>
       <a mat-list-item href="#">Contact Us</a>
       <a mat-list-item href="#">Home</a>
     </mat-nav-list>
@@ -19,15 +21,17 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="(isHandset$ | async)"
+      >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Sayings</span>
       <span class="spacer"></span>
-      <a href="#" class="toolbar-menu-text">Suggest a Saying</a>
-      <a href="#" class="toolbar-menu-text">Contact Us</a>
-      <a href="#" class="toolbar-menu-text">Home</a>
+      <div class="topnav">
+        <a [routerLink]="['/suggested-saying']" routerLinkActive="router-link-active">Suggest</a>
+        <a href="#">Contact</a>
+        <a href="#">Home</a>
+      </div>
     </mat-toolbar>
-    <app-sayings-list [sayings]="sayings$ | async"></app-sayings-list>
   </mat-sidenav-content>
 </mat-sidenav-container>

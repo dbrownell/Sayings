@@ -134,7 +134,7 @@
     "saying" : "To talk the talk, you need to walk the walk",
     "imageUrl" : "assets/image_data/walk_and_talk.png",
     "featured" : true,
-    "title" : "Wlaking and Talking",
+    "title" : "Walking and Talking",
     "categories": [
       "motivational"
     ]
@@ -167,6 +167,16 @@
     "title" : "Dead Men",
     "categories": [
       "morbid"
+    ]
+  },
+  {
+    "id": 17,
+    "saying" : "When one door close, another one opens",
+    "imageUrl" : "assets/image_data/burning_head.png",
+    "featured" : true,
+    "title" : "Perseverance",
+    "categories": [
+      "motivational","religion"
     ]
   }
 ]

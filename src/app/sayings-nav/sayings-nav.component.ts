@@ -5,7 +5,6 @@ import { map, switchMap } from 'rxjs/operators';
 import { Isayings } from '../shared/isayings';
 import { SayingsService } from '../shared/services/sayings.service';
 import { ActivatedRoute } from '@angular/router';
-
 @Component({
   selector: 'app-sayings-nav',
   templateUrl: './sayings-nav.component.html',
